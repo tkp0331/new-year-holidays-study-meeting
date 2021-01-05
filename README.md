@@ -17,3 +17,7 @@ cd new-year-holidays-study-meeting
 source bin/activate
 pip install -r requirements.txt
 ```
+
+# スライドについて
+実際の会ではスライドを使って説明をしています。  
+スライドを見てみたい！という方がいらっしゃいましたら連絡頂けましたら共有いたしますのでお申し付け下さい。  
