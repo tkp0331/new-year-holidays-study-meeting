@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}｜エントリーフォーム{% endblock %}
+
+
+{% block contents %}
+<form action="post">
+    {% csrf_token %}
+    <ul>
+        {{ form.as_ul }}
+    </ul>
+    <button type="submit">送信</button>
+</form>
+{% endblock %}

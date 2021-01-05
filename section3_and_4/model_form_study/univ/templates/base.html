@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>株式会社たかぴ{% block title %}{% endblock %}</title>
+    <style>
+        .top {
+            display: flex;
+            justify-content: space-around;
+            width: auto;
+            height: 75px;
+            background-color: aquamarine;
+        }
+    </style>
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <h2><a href="{% url 'univ:index' %}">トップページ</a></h2>
+        </div>
+        <div>
+            <h2><a href="{% url 'univ:entry' %}">エントリーフォーム</a></h2>
+        </div>
+    </div>
+
+    {% block contents %}{% endblock %}
+</body>
+
+</html>

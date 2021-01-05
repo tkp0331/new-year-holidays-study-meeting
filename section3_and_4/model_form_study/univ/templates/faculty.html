@@ -1,0 +1,9 @@
+{%　extends 'base.html' %}
+
+{% block title %}｜学部一覧{% endblock %}
+
+{% block contents %}
+{% for faculty in faculty_list %}
+<p>{{faculty.id}}, {{faculty.name}}</p>
+{% endfor %}
+{% endblock %}
